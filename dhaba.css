@@ -36,22 +36,20 @@ nav{
     display: flex;
     gap:1.2rem;
     font-size: 1.6rem;
+    flex-wrap: wrap;
      
 }
-@media (max-width:550px) {
-    #navitems{
-        flex-direction: column;
-        gap: 0.7rem;
-    }
+.navlogo{
+    font-size: 1.7rem;
+    font-family: 'Architects Daughter', cursive;
+    color: azure;
 }
+
 #navitems a{
     text-decoration: none;
     color: azure;
 }
-.navlogo{
-    font-size: 2rem;
-    color: azure;
-}
+
 
 #Home{
     width: 65%;
@@ -119,7 +117,7 @@ nav{
     width: 85%;
     margin: auto;
     margin-top: 6rem;
-    padding: 2rem;
+    padding: 1.5rem;
 }
 .ab{
     display: flex;
@@ -149,4 +147,31 @@ footer{
 .foot{
     width: 80%;
     padding: 1.5rem;
+}
+@media (max-width:550px) {
+    .nav{
+        flex-direction: column;
+        gap: 0.7rem;
+    }
+    #navitems{
+        font-size: 0.7rem;
+    }
+    .navlogo{
+        font-size: 1.4rem;
+    }
+    .navbar{
+        background-image: radial-gradient( circle 815px at 23.4% -21.8%,  rgb(1, 14, 48) 0.2%, rgba(0,0,0,1) 100.2% );
+    }
+    #About{
+        width: 90%;
+        padding: 0.5rem;
+    }
+    #Home{
+        width: 85%;
+        padding: 0.5rem;
+        box-shadow: 0.5px 0.5px 5px #ef4848;
+    }
+    .conta{
+        flex-direction: column-reverse;
+    }
 }
